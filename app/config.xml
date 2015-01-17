@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.skelware.flashlight" version="1.0.0"
+	xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+	<name>Fancy Flashlight</name>
+	<description>
+		A slick flashlight app that can be configured with custom profiles and
+		morse code!
+	</description>
+	<author email="admin@skelware.com" href="http://skelware.com">
+		Skelware
+	</author>
+	<access origin="*" />
+	<content src="index.html" />
+
+	<preference name="Fullscreen" value="false" />
+	<preference name="SplashScreen" value="screen" />
+	<preference name="SplashScreenDelay" value="1000" />
+	<preference name="AutoHideSplashScreen" value="true" />
+	<preference name="BackgroundColor" value="0xFFEEEEEE" />
+	<preference name="StatusBarStyle" value="lightcontent" />
+	<preference name="StatusBarOverlaysWebView" value="false" />
+	<preference name="StatusBarBackgroundColor" value="#0288D1" />
+
+	<platform name="android">
+		<icon src="www/res/android/icon/ldpi.png" density="ldpi" />
+		<icon src="www/res/android/icon/mdpi.png" density="mdpi" />
+		<icon src="www/res/android/icon/hdpi.png" density="hdpi" />
+		<icon src="www/res/android/icon/xhdpi.png" density="xhdpi" />
+
+		<splash src="www/res/android/splash/hdpi.png" density="port-hdpi" />
+		<splash src="www/res/android/splash/ldpi.png" density="port-ldpi" />
+		<splash src="www/res/android/splash/mdpi.png" density="port-mdpi" />
+		<splash src="www/res/android/splash/xhdpi.png" density="port-xhdpi" />
+	</platform>
+</widget>

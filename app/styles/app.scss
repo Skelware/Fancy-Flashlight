@@ -1,0 +1,109 @@
+$P050: #E1F5FE;
+$P100: #B3E5FC;
+$P200: #81D4FA;
+$P300: #4FC3F7;
+$P400: #29B6F6;
+$P500: #03A9F4;
+$P600: #039BE5;
+$P700: #0288D1;
+$P800: #0277BD;
+$P900: #01579B;
+
+$A100: #FF80AB;
+$A200: #FF4081;
+$A400: #F50057;
+$A700: #C51162;
+
+$G050: #FAFAFA;
+$G100: #F5F5F5;
+$G200: #EEEEEE;
+$G300: #E0E0E0;
+$G400: #BDBDBD;
+$G500: #9E9E9E;
+$G600: #757575;
+$G700: #616161;
+$G800: #424242;
+$G900: #212121;
+
+@mixin dots {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+@mixin emphasize  {
+	text-align: center;
+	font-weight: bold;
+}
+
+.header {
+	@include dots;
+	@include emphasize;
+	@extend .noselect;
+		
+	color: white;
+	font-size: 22px;
+	line-height: 48px;
+	text-align: center;
+	background-color: $P700 !important;
+}
+
+.footer {
+	@extend .noselect;
+	
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	background-color: $G100;
+}
+
+.skelware-button.active {
+	background-color: $P400;
+}
+
+.noselect {
+	cursor: default;
+	user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+}
+
+.noevent {
+	cursor: default;
+	pointer-events: none;
+}
+
+.noanimation {
+	transition-duration: 0s !important;
+}
+
+.fastanimation {
+	transition-duration: 0.1s !important;
+}
+
+.round {
+	border-radius: 50%;
+}
+
+#container {
+	@extend .noselect;
+	background: $G200;
+}
+
+#menu {
+	background-color: $G200;
+	
+	.skelware-paper {
+		color: white;
+		line-height: 48px;
+		background-color: $P400;
+		transition-duration: 0.2s;
+		
+		&.active {
+			background-color: $P700;
+		}
+	}
+}

@@ -1,0 +1,58 @@
+.header {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 22px;
+  line-height: 48px;
+  text-align: center;
+  background-color: #0288d1 !important; }
+
+.footer {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  background-color: whitesmoke; }
+
+.skelware-button.active {
+  background-color: #29b6f6; }
+
+.noselect, .header, .footer, #container {
+  cursor: default;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none; }
+
+.noevent {
+  cursor: default;
+  pointer-events: none; }
+
+.noanimation {
+  -webkit-transition-duration: 0s !important;
+  transition-duration: 0s !important; }
+
+.fastanimation {
+  -webkit-transition-duration: 0.1s !important;
+  transition-duration: 0.1s !important; }
+
+.round {
+  border-radius: 50%; }
+
+#container {
+  background: #eeeeee; }
+
+#menu {
+  background-color: #eeeeee; }
+  #menu .skelware-paper {
+    color: white;
+    line-height: 48px;
+    background-color: #29b6f6;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s; }
+    #menu .skelware-paper.active {
+      background-color: #0288d1; }

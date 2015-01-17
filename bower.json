@@ -1,0 +1,37 @@
+{
+  "name": "fancy-flashlight",
+  "description": "Skelware's Fancy Flashlight app for Android, iOS and Windows Phone 8.1.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/Skelware/fancy-flashlight",
+  "authors": [
+    {
+      "name": "StephanBijzitter",
+      "url": "http://github.com/Skelware/"
+    }
+  ],
+  "main": "app/index.html",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "famo.us"
+  ],
+  "license": "ISC",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "src/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.15",
+    "almond": "~0.2.9",
+    "famous-polyfills": "~0.3.0",
+    "famous": "~0.3.1"
+  },
+  "devDependencies": {
+    "famous-flex": "master"
+  }
+}
