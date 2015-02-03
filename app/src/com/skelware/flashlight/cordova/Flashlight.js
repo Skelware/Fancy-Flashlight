@@ -147,16 +147,19 @@ define(function(require, exports, module) {
         document.body.style.background = enabled ? '#FFFFFF' : '#EEEEEE';
     }
 
+    function _shutDown() {
+        if (Flashlight.ignoreNextEvent) {
+            Flashlight.ignoreNextEvent = false;
+        } else if (navigator.app) {
+            navigator.app.exitApp();
+        }
+    }
+
+    var _backButton = Flashlight.release.bind(Flashlight, _shuwDown);
+
     document.addEventListener('pause', Flashlight.release);
     document.addEventListener('resume', Flashlight.request);
-    document.addEventListener('backbutton', Flashlight.release.bind(Flashlight,
-            function() {
-                if (Flashlight.ignoreNextEvent) {
-                    Flashlight.ignoreNextEvent = false;
-                } else if (navigator.app) {
-                    navigator.app.exitApp();
-                }
-            }));
+    document.addEventListener('backbutton', _backButton);
 
     module.exports = Flashlight;
 });
